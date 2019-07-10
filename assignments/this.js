@@ -36,6 +36,23 @@ console.log(ImplicitBind.message());
 
 // code example for New Binding
 
+
+function NewBinding(speak, name) {
+    this.name = name;
+    this.speak = speak;
+    this.says = function(){
+        return `${this.name} says: ${this.speak}.`
+    }
+    }
+    
+    test = new NewBinding('Hello', 'Jesse');
+    test2 = new NewBinding('Good-bye', 'Emma')
+    console.log(test.says());
+    console.log(test2.says())
+
+
+
+
 // Principle 4
 
 // code example for Explicit Binding
