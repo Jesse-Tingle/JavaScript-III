@@ -3,8 +3,8 @@
 *
 * 1. Window binding - when using the "this" keyword in global scope it will return the window/console object.
 * 2. Implicit binding - 
-* 3. 
-* 4. 
+* 3. New binding -
+* 4. Explicit binding - this occurs when you specifically use .call, .apply, or .bind on a function. This is explicit binding because you are explicitly passing in a "this" context using .call, .apply, or .bind. 
 *
 * write out a code example of each explanation above
 */
