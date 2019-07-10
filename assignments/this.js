@@ -1,8 +1,8 @@
 /* The four principles of "this"; 
 * In your own words. explain the four principles for the "this" keyword below.
 *
-* 1. 
-* 2. 
+* 1. Window binding - when using the "this" keyword in global scope it will return the window/console object.
+* 2. Implicit binding - 
 * 3. 
 * 4. 
 *
@@ -12,6 +12,11 @@
 // Principle 1
 
 // code example for Window Binding
+
+var windowBind = function () { 
+    console.log(this); 
+}; 
+windowBind();
 
 // Principle 2
 
