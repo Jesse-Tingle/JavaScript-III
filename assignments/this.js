@@ -51,8 +51,20 @@ function NewBinding(speak, name) {
     console.log(test2.says())
 
 
-
-
 // Principle 4
 
 // code example for Explicit Binding
+
+const vegetable = {
+    name: 'Pineapples'
+}
+
+const uses = ["Drinks", 'Salads', 'Salsa'];
+
+function sayUses(use1, use2, use3) {
+  return `${this.name} can be used in ${use1}, ${use2}, and ${use3}.`
+}
+
+const vegieDescription = sayUses.bind(vegetable, ...uses);
+
+console.log(vegieDescription());
