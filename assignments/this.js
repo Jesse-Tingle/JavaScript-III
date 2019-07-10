@@ -22,6 +22,16 @@ windowBind();
 
 // code example for Implicit Binding
 
+const ImplicitBind = {
+    name: `Implicit-Binding`,
+    date: `today`,
+    message: function() {
+        return `Here is an example of ${this.name} created ${this.date}.`;
+    }
+};
+
+console.log(ImplicitBind.message());
+
 // Principle 3
 
 // code example for New Binding
