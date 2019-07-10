@@ -2,7 +2,7 @@
 * In your own words. explain the four principles for the "this" keyword below.
 *
 * 1. Window binding - when using the "this" keyword in global scope it will return the window/console object.
-* 2. Implicit binding - 
+* 2. Implicit binding - when using implicit binding the "this" keyword will refer to whatever is left of the "."
 * 3. New binding - New binding occurs when using a constructor funtion along with the "new" keyword which will allow the "this" keyword to point to the new object that has been created.
 * 4. Explicit binding - this occurs when you specifically use .call, .apply, or .bind on a function. This is explicit binding because you are explicitly passing in a "this" context using .call, .apply, or .bind. 
 *
